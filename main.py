@@ -43,7 +43,7 @@ elif dodo == "4":
     subject=input("[*] enter what the email will say: ")
     spam = "mail -s "+ subject+" "+ email+""
     i=1
-        while i < 10:
+    while i < 10:
         os.system(spam)
     i+=1
 elif dodo == "5":
