@@ -13,11 +13,11 @@ print("     [04] Spam Attack")
 print("     [05] Phishing Attack")
 print("     [06] Nmap")
 print("     [07] Github")
-print("     [08] Neofetch")
 print("     [09] Hydra")
 print("     [10] Doomsday wordlist")
 print("     [11] Netcat")
-print("     [12] Help")
+print("     [12] Darkweb")
+print("     [13] Help")
 print("")
 dodo=input("[*] enter your choice: ")
 if dodo == "1":
@@ -71,18 +71,12 @@ elif dodo == "7":
     os.system(github)
 elif dodo == "8":
     print("")
-    neofetch = "neofetch"
-    os.system(neofetch)
-elif dodo == "9":
-    print("")
     user=input("[*] enter user: ")
-    passlist=input("[*] enter password list: ")
-    ip=input("[*] enter targets ip: ")
-    hydra = "sudo apt install hydra -y"
-    attack = "hydra -l "+ user+" -P "+ passlist+" ftp://"+ ip+""
+    passlist=input("[*] enter wordlist: ")
+    ip=input("[*] enter ip address: ")
+    hydra = "hydra -l "+ user+" -P "+ passlist+" ftp://"+ ip+""
     os.system(hydra)
-    os.system(attack)
-elif dodo == "10":
+elif dodo == "9":
     print("")
     gitclone = "git clone https://github.com/someStranger8/DoomsDay"
     cd = "cd doomsday"
@@ -90,13 +84,23 @@ elif dodo == "10":
     os.system(gitclone)
     os.system(cd)
     os.system(nano)
-elif dodo == "11":
+elif dodo == "10":
     ip=input("[*] enter ip address: ")
     port=input("[*] enter port number: ")
     install = "sudo apt install netcat -y"
     netcat = "nc -nv "+ ip+" "+ port+""
     os.system(install)
     os.system(netcat)
+elif dodo == "11":
+    print("")
+    dark = "git clone https://github.com/somestranger8/darkweb"
+    cd = "cd darkweb"
+    netcat = "sudo apt install netcat"
+    web = "python3 main.py"
+    os.system(dark)
+    os.system(cd)
+    os.system(netcat)
+    os.system(web)
 elif dodo == "12":
     print("")
     print(" this is made for the unix")
