@@ -86,7 +86,7 @@ elif dodo == "10":
     print("")
     gitclone = "git clone https://github.com/someStranger8/DoomsDay"
     cd = "cd doomsday"
-        nano = "nano doomsday.txt"
+    nano = "nano doomsday.txt"
     os.system(gitclone)
     os.system(cd)
     os.system(nano)
