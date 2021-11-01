@@ -21,11 +21,10 @@ print("     [04] Spam Attack")
 print("     [05] Phishing Attack")
 print("     [06] Nmap")
 print("     [07] Github")
-print("     [09] Hydra")
-print("     [10] Doomsday wordlist")
-print("     [11] Netcat")
-print("     [12] Darkweb")
-print("     [13] Help")
+print("     [08] Hydra")
+print("     [09] Doomsday wordlist")
+print("     [10] Netcat")
+print("     [11] Darkweb")
 print("")
 dodo=input("[*] enter your choice: ")
 if dodo == "1":
@@ -45,7 +44,7 @@ elif dodo == "3":
     run = "sudo wireshark"
     os.system(install)
     os.system(run)
-elif dodo == "4":
+elif dodo == 4":
     print("")
     email=input("[*] enter targets email: ")
     subject=input("[*] enter what the email will say: ")
@@ -109,11 +108,3 @@ elif dodo == "11":
     os.system(cd)
     os.system(netcat)
     os.system(web)
-elif dodo == "12":
-    print("")
-    print(" this is made for the unix")
-    print(" and chrome operating system")
-    print(" please do not use on windows")
-    print(" or mac os operating system")
-    print("")
-    sys.exit()
