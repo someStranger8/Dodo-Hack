@@ -81,7 +81,7 @@ elif dodo == "8":
     user=input("[*] enter user: ")
     passlist=input("[*] enter wordlist: ")
     ip=input("[*] enter ip address: ")
-    hydra = "hydra -l "+ user+" -P "+ passlist+" ftp://"+ ip+""
+    hydra = "hydra -l "+ user+" -P "+ passlist+" ssh://"+ ip+""
     os.system(hydra)
 elif dodo == "9":
     print("")
