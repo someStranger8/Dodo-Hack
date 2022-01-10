@@ -26,7 +26,7 @@ print("     [09] Doomsday wordlist")
 print("     [10] Netcat")
 print("     [11] Darkweb")
 print("")
-dodo=input("[*] enter your choice: ")
+input("[*] enter choice: ")
 if dodo == "1":
     print("")
     ip=input("[*] enter sever domain or ip address: ")
